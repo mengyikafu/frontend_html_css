@@ -1,0 +1,71 @@
+.rte:after {
+    clear: both;
+    content: "";
+    display: block
+}
+
+.rte>p:first-child {
+    margin-top: 0
+}
+
+.rte>p:last-child {
+    margin-bottom: 0
+}
+
+.rte table {
+    table-layout: fixed
+}
+
+.rte table th {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    padding: .5em;
+    text-align: center
+}
+
+.rte table td {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    padding: .8em .5em;
+    text-align: center
+}
+
+.rte img {
+    height: auto;
+    max-width: 100%;
+    margin-bottom: var(--media-shadow-vertical-offset)
+}
+
+.rte ul {
+    padding-left: 2rem
+}
+
+.rte li {
+    list-style: inherit
+}
+
+.rte li:last-child {
+    margin-bottom: 0
+}
+
+.rte a {
+    color: rgba(var(--color-link), var(--alpha-link));
+    text-underline-offset: .3rem;
+    text-decoration-thickness: .1rem;
+    transition: text-decoration-thickness var(--duration-short) ease
+}
+
+.rte a:hover {
+    color: rgb(var(--color-link));
+    text-decoration-thickness: .2rem
+}
+
+.rte blockquote {
+    display: inline-flex
+}
+
+.rte blockquote>* {
+    margin: -.5rem 0
+}
+
+/*# sourceMappingURL=/s/files/1/0001/8359/9140/t/93/assets/component-rte.css.map?v=103740312986841535231656464812 */

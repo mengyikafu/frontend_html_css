@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1_选择器 class 选择器</title>
+</head>
+<body>
+    在 style 标签下  最底下的css 优先级最高
+    &
+    *{
+        // 这个就叫做所有选择器
+    }
+    class 选择器 .kk{}  id选择器 #kk{} 
+
+    群组标签. 
+    div,p,h1{
+
+    }
+    后代选择器.
+    p b{
+
+    } // 针对于 p标签的b标签的
+
+    伪类选择器
+    a:link{
+        超链接 初始状态. 
+    }
+    a:hover{
+        鼠标悬停, 
+    }
+    a:visited{
+        点进去以后的状态
+    }
+    a:active{
+        按下去的时候状态
+    }
+    link ->visited -> hover -> active
+
+    选择器的权重 , 当多个选择器,选中的是同一个元素, 且都为他们定义了样式,如果属性发生冲突了,会选择权重高的来执行,
+    id选择器>class>元素  #>.>元素
+    !important >内联 >包含选择符 包含选择器权重之和 > id选择器>class选择器>类型元素选择器
+    当不同选择符的样式设置有冲突的时候,高权重选择符的 样式会覆盖低权重选择符的样式
+    相同权重的选择符 样式遵循就近原则 哪个选择符最后定义就采用哪个选择符样式.
+</body>
+</html>

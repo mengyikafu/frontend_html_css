@@ -1,0 +1,13 @@
+.box1{
+    width: 400px;
+    height: 1000px;
+    background-color: black;
+    background-image: url(/img/LevisxHumanMade_news-image-1_no_logo_d3afk2cc_1100x.webp);
+    /* 默认平铺效果 */
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0 auto;
+    padding: 0;
+}

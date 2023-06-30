@@ -1,0 +1,12 @@
+.list{
+    list-style: none;
+    /* disc 实心圆
+    circle 空心圆
+    square 实心正方形 */
+    list-style-image: url(/img/logo_2.svg);
+
+}
+.list li{
+    list-style-position: inside;
+    border: 1px solid red;
+}

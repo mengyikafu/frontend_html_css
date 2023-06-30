@@ -1,0 +1,15 @@
+.about{
+    text-align: justify;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-family: "Avenir Next", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", "Arial", sans-serif;
+    line-height: 20px;
+    letter-spacing: 2px;
+    width: 40em;
+}
+.tx{
+    width: 30%;
+    margin: 0 auto;
+    line-height: 20em;
+}

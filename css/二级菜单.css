@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.box{
+    margin: 0 auto;
+    width:450px;
+}
+ul{
+    list-style: none;
+}
+.box .item{
+    float: left;
+    line-height: 50px;
+    font-size: 1.2rem;
+    width: 148px;
+    line-height: 1.5;
+    text-align: center;
+}
+.item:hover{
+    background-color: rgb(189, 193, 83);
+}
+.item > ul{
+    display: none;
+}
+.item:hover > ul{
+    display: block;
+}
+.item li:hover{
+    color: blue;
+}

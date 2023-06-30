@@ -1,0 +1,50 @@
+.p1{
+    font-size: 39px;
+    font-family:var(--font-body-family), "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", "Arial", sans-serif;
+    color: rgb(55, 204, 206);
+    font-weight: bolder;
+    font-style: oblique;
+    text-align: center;
+}
+.text{
+    text-align: justify;
+    /* 两端对齐 */
+    width: 1000px;
+}
+.tx{
+    text-align: center;
+    font-family: var(--font-body-family), "游ゴシック体";
+    font-weight: bolder;
+    width: 1000px;
+    color: red;
+    background-color: rgb(218, 216, 214);
+}
+.tx img{
+    max-width: 20%;
+    border: "0";
+}
+.tx2{
+    background-color: rgb(218, 216, 214);
+    width: 1000px;
+    line-height: 100px;
+    text-align: center;
+    
+}
+.tx3{
+    line-height: 100px;
+    background-color: rgb(238, 235, 232);
+    width: 1000px;
+    line-height: 30px;
+    text-align: justify;
+}
+.tx4{
+    /* 字符间距 */
+    letter-spacing: 2px;
+    /* 单词间距 */
+    word-spacing: 2em;
+    width: 1000px;
+    text-indent: 2em;
+    /* 如果没设置font-size的话 默认一个字是16px */
+    background-color: coral;
+    text-decoration: overline;
+}

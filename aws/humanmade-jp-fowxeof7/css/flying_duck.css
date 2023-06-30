@@ -1,0 +1,188 @@
+:root {
+    --repeat_time: 4.2s;
+    --repeat_time_sp: 3.1s;
+    --base-size: 600
+}
+
+@media only screen and (min-width: 600px) {
+    :root {
+        --base-size: 1300
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    :root {
+        --base-size: 1800
+    }
+}
+
+.kamo_anime_wrap {
+    position: fixed;
+    top: 50vh;
+    width: calc(50 / var(--base-size) * 100vw);
+    will-change: transform;
+    z-index: 100
+}
+
+.kamo {
+    width: calc(120 / var(--base-size) * 100vw);
+    position: relative;
+    visibility: hidden;
+    will-change: transform
+}
+
+.kamo_anime_wrap.kamo_anime_start .kamo {
+    animation: kamo_animation_motion var(--repeat_time_sp) linear
+}
+
+@media only screen and (min-width: 600px) {
+
+    .kamo_anime_wrap,
+    .kamo {
+        width: calc(140 / var(--base-size) * 100vw)
+    }
+
+    .kamo_anime_wrap.kamo_anime_start,
+    .kamo_anime_wrap.kamo_anime_start .kamo {
+        animation-duration: var(--repeat_time)
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+
+    .kamo_anime_wrap.kamo_anime_start,
+    .kamo_anime_wrap.kamo_anime_start .kamo {
+        animation-duration: var(--repeat_time)
+    }
+}
+
+.kamo>div {
+    will-change: transform;
+    width: calc(110 / var(--base-size) * 100vw);
+    max-width: 120px
+}
+
+.kamo_anime_wrap .kamo img {
+    will-change: transform;
+    user-drag: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none
+}
+
+.kamo_anime_wrap .kamo_anime_01 {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.kamo_anime_wrap .kamo_anime_02 {
+    position: absolute;
+    top: calc(90 / var(--base-size) * 100vw);
+    left: calc(105 / var(--base-size) * -100vw)
+}
+
+.kamo_anime_wrap.kamo_anime_start .kamo_anime_05 {
+    animation: kamo_animation_motion_kobetu05 var(--repeat_time_sp) ease-in;
+    animation-fill-mode: forwards
+}
+
+@media only screen and (min-width: 600px) {
+    .kamo_anime_wrap.kamo_anime_start .kamo_anime_05 {
+        animation: kamo_animation_motion_kobetu05 var(--repeat_time) ease-in;
+        animation-fill-mode: forwards
+    }
+}
+
+.kamo_anime_wrap .kamo_anime_03 {
+    position: absolute;
+    top: calc(165 / var(--base-size) * 100vw);
+    left: calc(227 / var(--base-size) * -100vw)
+}
+
+.kamo_anime_wrap .kamo_anime_04 {
+    position: absolute;
+    top: calc(48 / var(--base-size) * -100vw);
+    left: calc(150 / var(--base-size) * -100vw)
+}
+
+.kamo_anime_wrap .kamo_anime_05 {
+    position: absolute;
+    top: calc(70 / var(--base-size) * -100vw);
+    left: calc(335 / var(--base-size) * -100vw)
+}
+
+@keyframes kamo_animation_motion {
+    0% {
+        transform: translate3d(-10vw, 0, 0);
+        opacity: 0;
+        visibility: hidden
+    }
+
+    1% {
+        transform: scale(1) translate3d(-10vw, 0, 0);
+        filter: blur(0);
+        opacity: 1;
+        visibility: visible
+    }
+
+    98% {
+        transform: scale(.95) translate3d(200vw, -220px, 0);
+        filter: blur(.2px);
+        opacity: 1;
+        visibility: visible
+    }
+
+    99% {
+        opacity: 0;
+        visibility: hidden;
+        transform: translate3d(200vw, -250px, 0)
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateZ(0)
+    }
+}
+
+@keyframes kamo_animation_motion_kobetu01 {
+    0% {
+        transform: scale(0) translateZ(0)
+    }
+
+    to {
+        transform: scale(1.1) translate3d(5vw, 5px, 0)
+    }
+}
+
+@keyframes kamo_animation_motion_kobetu02 {
+    0% {
+        transform: scale(1) translateZ(0)
+    }
+
+    to {
+        transform: scale(.95) translate3d(calc(20 / var(--base-size) * -100vw), 2px, 0)
+    }
+}
+
+@keyframes kamo_animation_motion_kobetu04 {
+    0% {
+        transform: translateZ(0)
+    }
+
+    to {
+        transform: translate3d(3vw, -20px, 0)
+    }
+}
+
+@keyframes kamo_animation_motion_kobetu05 {
+    0% {
+        transform: translateZ(0)
+    }
+
+    to {
+        transform: translate3d(-40vw, calc(30 / var(--base-size) * 100vw), 0)
+    }
+}
+
+/*# sourceMappingURL=/s/files/1/0001/8359/9140/t/93/assets/flying_duck.css.map?v=114276509624493222091657529684 */

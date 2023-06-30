@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>样式表的优先</title>
+    <link rel="stylesheet" href="./css/01_index.css"> 
+     <!-- 希望一开始的时候 写 link 标签  后部 写 内部style  link是最低   -->
+    <style>
+        div{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div style="color: blue"> 111111111111111</div>
+    <!-- 行内css 是最高的  > 内部 >外部的   要是谁加的 !important 谁就是最高的,-->
+</body>
+</html>

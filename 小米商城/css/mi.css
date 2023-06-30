@@ -1,0 +1,23 @@
+/* 顶部广告 */
+.header{
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+    /* 让子容器的 定位 是相对于父容器 */
+}
+/* 
+        面试常见的css问题
+        1. 内容居中问题: 一个大盒子中有小盒子 如何让小盒子 在大盒子中垂直水平居中?
+            1.弹性盒子模型
+            2.定位的方式
+            3.表格的方式
+*/
+.header  img{
+    height: 60px;
+    position: absolute; 
+    /* 绝对定位 */
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* 顶部广告end */
